@@ -12,3 +12,11 @@ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 
 go mod init golang-learn
+
+go build main.go
+
+./main
+
+go tool dist list
+go env
+go env GOOS GOARCH
