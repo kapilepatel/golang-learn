@@ -10,3 +10,5 @@ Useful Git commands
 git clone https://github.com/kapilepatel/golang-learn.git
 git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
+
+go mod init golang-learn
