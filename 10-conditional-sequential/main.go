@@ -42,4 +42,14 @@ func main() {
 
 	}
 
+	y := 9
+	switch y {
+	case 8:
+		fmt.Println("Case 8")
+	case 10:
+		fmt.Println("Case 10")
+	case 9, 12:
+		fmt.Println("Case 9 or 12, try by updating the variable")
+	}
+
 }
