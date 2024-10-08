@@ -17,4 +17,13 @@ func main() {
 		fmt.Println("j: ", j)
 		j++
 	}
+
+	k := 0
+	for {
+		if k > 5 {
+			break
+		}
+		fmt.Println("k: ", k)
+		k++
+	}
 }
