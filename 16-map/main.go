@@ -19,4 +19,26 @@ func main() {
 	for k, v := range m {
 		fmt.Printf("Key: %v - Value: %v \n", k, v)
 	}
+
+	if item, ok := m["itemx"]; ok {
+		fmt.Println(item)
+		//fmt.Printf("%v",item)
+	}
+
+	if item, ok := m["zzz"]; ok {
+		fmt.Println(item)
+		//fmt.Printf("%v",item)
+	} else {
+		fmt.Println("zzz does not exists")
+
+	}
+
+	// func offset(tz string) int {
+	// 	if seconds, ok := timeZone[tz]; ok {
+	// 		return seconds
+	// 	}
+	// 	log.Println("unknown time zone:", tz)
+	// 	return 0
+	// }
+
 }
