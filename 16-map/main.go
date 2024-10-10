@@ -20,6 +20,7 @@ func main() {
 		fmt.Printf("Key: %v - Value: %v \n", k, v)
 	}
 
+	//comma ok
 	if item, ok := m["itemx"]; ok {
 		fmt.Println(item)
 		//fmt.Printf("%v",item)
@@ -33,12 +34,10 @@ func main() {
 
 	}
 
-	// func offset(tz string) int {
-	// 	if seconds, ok := timeZone[tz]; ok {
-	// 		return seconds
-	// 	}
-	// 	log.Println("unknown time zone:", tz)
-	// 	return 0
-	// }
+	fmt.Printf("true && true %v \n", true && true)
+	fmt.Printf("true && false %v \n", true && false)
+	fmt.Printf("true || true %v \n", true || true)
+	fmt.Printf("true || false %v \n", true || false)
+	fmt.Printf("!true %v \n", !true)
 
 }

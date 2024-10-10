@@ -14,4 +14,11 @@ func main() {
 
 	}
 
+	//array
+	var a = [...]string{"Almond", "Banana", "Cookies"}
+
+	fmt.Println("Array values", a)
+	fmt.Println("Array length", len(a))
+	fmt.Printf("Type %T \n", a)
+
 }
