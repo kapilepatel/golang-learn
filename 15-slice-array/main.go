@@ -48,8 +48,16 @@ func main() {
 
 	si := []int{1, 2, 5, 10}
 	fmt.Println(si)
+
 	//variadic paramater
 	si = append(si, 11, 13, 33)
 	fmt.Println("After appemd, ", si)
+
+	//delete from a slice
+	//si 1 2 5 10 11 13 33
+	//let's skip item 5 which is at index 2 (zero based indexing)
+	//[includes:excludes]
+	xi := append(si[:2], si[3:]...)
+	fmt.Println("xi ", xi)
 
 }
