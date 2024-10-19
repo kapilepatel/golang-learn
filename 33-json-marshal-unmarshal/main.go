@@ -11,6 +11,13 @@ type person struct {
 	Friends []person
 }
 
+type alien struct {
+	First   string
+	Last    string
+	Age     int
+	Sayings []string
+}
+
 func main() {
 
 	p1 := person{
@@ -31,4 +38,19 @@ func main() {
 	}
 	fmt.Println(string(j))
 
+	fmt.Println("----------")
+
+	aj := `[{"First":"James","Last":"Bond","Age":32,"Sayings":["Shaken", "not stirred"]},{"First":"Jenny","Penny":"Bond","Age":22,"Sayings":["s1", "s2"]}]`
+	var as []alien
+	err = json.Unmarshal([]byte(aj), &as)
+	if err != nil {
+		fmt.Println("Error while doing Unmarshal:", err)
+	}
+
+	fmt.Println(as)
+	fmt.Println("-----++++++++-----")
+	for _, v := range as {
+		fmt.Println("Alien First", v.First)
+		fmt.Println("Age ", v.Age)
+	}
 }
