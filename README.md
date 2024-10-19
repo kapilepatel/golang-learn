@@ -20,3 +20,6 @@ go build main.go
 go tool dist list
 go env
 go env GOOS GOARCH
+
+cd 31-interface
+go test
