@@ -25,3 +25,7 @@ go.work.sum
 .env
 golang-learn
 main
+.DS_Store
+.idea/modules.xml
+go-practice/.idea/go-practice.iml
+go-practice/.idea/modules.xml
