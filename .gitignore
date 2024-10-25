@@ -29,3 +29,5 @@ main
 .idea/modules.xml
 go-practice/.idea/go-practice.iml
 go-practice/.idea/modules.xml
+.idea/vcs.xml
+.vscode/launch.json
