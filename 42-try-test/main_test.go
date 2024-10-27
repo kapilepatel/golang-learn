@@ -39,3 +39,47 @@ func TestValidDatePassingInvalidDate(t *testing.T) {
 	}
 
 }
+
+func TestBulkValidDate(t *testing.T) {
+	type testDate struct {
+		date   int
+		answer bool
+	}
+
+	testDates := []testDate{
+		testDate{
+			date:   -1,
+			answer: false,
+		},
+		testDate{
+			date:   0,
+			answer: false,
+		},
+		testDate{
+			date:   1,
+			answer: true,
+		},
+		testDate{
+			date:   31,
+			answer: true,
+		},
+		testDate{
+			date:   32,
+			answer: false,
+		},
+	}
+
+	for _, v := range testDates {
+		response, _ := validDate(v.date)
+		if response != v.answer {
+			t.Error("Expected", v.answer, "got", response)
+		}
+	}
+}
+
+func BenchmarkValidDate(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		validDate(0)
+
+	}
+}

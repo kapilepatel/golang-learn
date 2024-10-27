@@ -23,3 +23,8 @@ go env GOOS GOARCH
 
 cd 31-interface
 go test
+
+
+cd 42-try-test   
+go test -v
+go test -bench ValidDate
