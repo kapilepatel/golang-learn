@@ -28,3 +28,7 @@ go test
 cd 42-try-test   
 go test -v
 go test -bench ValidDate
+
+
+go test -coverprofile c.out
+go tool cover -html=c.out

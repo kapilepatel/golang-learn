@@ -79,7 +79,7 @@ func TestBulkValidDate(t *testing.T) {
 
 func BenchmarkValidDate(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		validDate(0)
+		validDate(9223372036854775807)
 
 	}
 }
